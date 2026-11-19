@@ -1,0 +1,33 @@
+#  Copyright (c) 2019-2026 Patrick Rainsberry
+#  Licensed under the Apache License, Version 2.0. See LICENSE for details.
+
+# Application Global Variables
+# This module serves as a way to share variables across different
+# modules (global variables).
+
+import os
+
+# Flag that indicates to run in Debug mode or not. When running in Debug mode
+# more information is written to the Text Command window. Generally, it's useful
+# to set this to True while developing an add-in and set it to False when you
+# are ready to distribute it.
+DEBUG = False
+
+# Gets the name of the add-in from the name of the folder the py file is in.
+# This is used when defining unique internal names for various UI elements
+# that need a unique name. It's also recommended to use a company name as
+# part of the ID to better ensure the ID is unique.
+ADDIN_NAME = os.path.basename(os.path.dirname(__file__))
+COMPANY_NAME = 'Autodesk'
+
+# Folder in the user's home directory the hub exports to by default
+USER_DIR_NAME = 'Fusion hub export'
+
+# Location of the Archive panel shared by all commands
+DESIGN_WORKSPACE_ID = 'FusionSolidEnvironment'
+TOOLS_TAB_ID = 'ToolsTab'
+ARCHIVE_PANEL_ID = f'{COMPANY_NAME}_{ADDIN_NAME}_archive_panel'
+ARCHIVE_PANEL_NAME = 'Hub export'
+
+# Command IDs that are referenced by more than one command
+CLOSE_ALL_CMD_ID = f'{COMPANY_NAME}_{ADDIN_NAME}_closeAll'

@@ -1,0 +1,7 @@
+Fusion hub exporter
+===================
+
+This add-in is based on Project Archiver by Patrick Rainsberry
+(https://github.com/tapnair/Project-Archiver), licensed under the Apache License,
+Version 2.0 (see LICENSE). It was vendored at commit
+37b1f2a4935cc83a67e76229df147bc55bb9a421 and modified.

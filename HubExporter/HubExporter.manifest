@@ -1,0 +1,14 @@
+{
+	"autodeskProduct":	"Fusion",
+	"type":	"addin",
+	"id":	"96d123c9-49cd-4ab4-b84e-d6641ac6091a",
+	"author":	"Autodesk (based on Project Archiver by Patrick Rainsberry)",
+	"description":	{
+		"":	"Export every file in your Fusion hub to neutral formats: STEP for designs, PDF for drawings and EAGLE for electronics. Based on Project Archiver by Patrick Rainsberry (Apache 2.0)."
+	},
+	"version":	"0.1.0",
+	"runOnStartup":	false,
+	"supportedOS":	"windows|mac",
+	"editEnabled":	true,
+	"iconFilename":	"AddInIcon.svg"
+}
