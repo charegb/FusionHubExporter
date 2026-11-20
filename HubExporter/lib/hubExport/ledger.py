@@ -14,7 +14,7 @@ from .model import DONE, FAILED, IN_PROGRESS, MAX_ATTEMPTS, NOT_EXPORTABLE, PEND
 LEDGER_FILE = 'hub-export-progress.json'
 SCHEMA_VERSION = 1
 
-CRASH_REASON = 'Fusion stopped while exporting this file'
+CRASH_REASON = 'Fusion stopped twice while exporting this file, so it was skipped'
 UPDATED_NOTE = 'updated since the first run'
 SET_ASIDE_NOTICE = ('An earlier progress file in this folder could not be used, so it was set aside as {} '
                     'and this export starts fresh.')
